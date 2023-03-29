@@ -1,0 +1,28 @@
+.skill{
+    margin-bottom: 30px;
+    p{
+        font-weight: 800;
+        font-size: 16px;
+        margin-left: 5px;
+    }
+    .fild{
+        width: 360px;
+        height: 2px;
+        background-color: rgba(51, 46, 29, 0.4);
+        margin-top: 15px;
+        .progress{
+            height: 2px;
+            transition: width 1s;
+        }
+    }
+}
+
+.skill:hover{
+    cursor: pointer;
+    .fild{
+        .progress{
+            transition: width 1s;
+            width: 0 !important;
+        }
+    }
+}
