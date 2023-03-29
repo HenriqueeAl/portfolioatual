@@ -6,10 +6,19 @@
         li{
             margin-right: 30px;
             cursor: pointer;
-            opacity: 0.8;
+            opacity: 0.4;display: flex;
+            align-items: center;
+            padding: 5px;
         }
-        li:hover{
+        .hoverd:hover{
             opacity: 1;
+            border-radius: 10px;
+            background-color: #1c2340;
+        }
+        .hoverl:hover{
+            opacity: 1;
+            border-radius: 10px;
+            background-color: #d8c09a;
         }
     }
 }

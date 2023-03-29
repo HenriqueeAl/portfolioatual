@@ -8,6 +8,7 @@ import { Projects } from '@/components/Projects'
 import { Never } from '@/components/Never'
 import { Footer } from '@/components/Footer'
 import { useState, useEffect } from 'react';
+import { json } from 'stream/consumers'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -22,17 +23,24 @@ export default function Home() {
   useEffect(()=>{
     if(localStorage.getItem('darkmode')){
       setDarkmode(localStorage.getItem('darkmode'))
+      console.log(localStorage.getItem('darkmode'))
       if(darkmode != null){
         localStorage.setItem('darkmode', darkmode)
       }
     }else{
-      localStorage.setItem('darkmode', false)
+      localStorage.setItem('darkmode', JSON.stringify(false))
       setDarkmode(localStorage.getItem('darkmode'))
     }
   }, [])
 
   useEffect(()=>{
+    if(darkmode === 'false'){
+      setDarkmode(false)
+    }else if (darkmode === 'true'){
+      setDarkmode(true)
+    }
     if(darkmode != null){
+      
       localStorage.setItem('darkmode', darkmode)
     }
   }, [darkmode])
@@ -50,8 +58,8 @@ export default function Home() {
       : 
       <>
         <Header darkmodef={()=>setDarkmode(!darkmode)} darkmode={darkmode}></Header>
-          <main className={inter.className} style={darkmode ? {background: 'rgba(57, 50, 77,0.9)', color: '#FFE8EF'} : {background: '#CDCD76', color: '#332E1D'}}>
-            <Infos></Infos>
+          <main className={inter.className} style={darkmode == true ? {background: 'rgba(57, 50, 77,0.9)', color: '#FFE8EF'} : {background: 'rgba(245, 238, 212,0.6)', color: '#574345'}}>
+            <Infos darkmode={darkmode}></Infos>
             <Skills></Skills>
             <Projects></Projects>
             <Never></Never>
