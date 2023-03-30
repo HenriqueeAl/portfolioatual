@@ -9,6 +9,7 @@ import { Never } from '@/components/Never'
 import { Footer } from '@/components/Footer'
 import { useState, useEffect } from 'react';
 import { json } from 'stream/consumers'
+import { Quests } from '@/components/Quests/Quests'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -62,6 +63,7 @@ export default function Home() {
             <Infos darkmode={darkmode}></Infos>
             <Skills></Skills>
             <Projects></Projects>
+            <Quests bgbox={darkmode ? '#39324D' : '#AFAF60'} colorborder={darkmode ? '1px solid white' : '1px solid #574345'}></Quests>
             <Never></Never>
           </main>
         <Footer darkmode={darkmode}></Footer>

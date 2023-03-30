@@ -4,13 +4,19 @@
     padding-top: 80px;
     display: flex;
     justify-content: space-evenly;
+    @media (max-width: 780px) {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 40px;
+    }
     .bg{
-        width: 302px;
-        height: 302px;
+        width: 300px;
+        height: 300px;
         border-radius: 15px;
         display: flex;
         align-items: center;
         justify-content: center;
+        border: 3px solid transparent;
         .photo{
             width: 300px;
             height: 300px;
@@ -18,30 +24,72 @@
             background-position: center;
             border-radius: 15px;
             background-image: url(/myimage.jpg);
+            @media (max-width: 500px) {
+                width: 250px;
+                height: 250px;
+            }
         }
     }
     .text{
         margin-top: 2%;
+        @media (max-width: 780px) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
         h1{
             font-weight: 800;
             font-size: 36px;
             height: 15%;
+            @media (max-width: 950px) {
+                font-size: 30px;
+            }
+            @media (max-width: 500px) {
+                font-size: 26px;
+            }
+            @media (max-width: 400px) {
+                font-size: 20px;
+            }
         }
         .separar{
             display: flex;
             flex-direction: column;
             justify-content: space-between;
             height: 65%;
+            @media (max-width: 780px) {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
             .role{
                 font-weight: 500;
                 font-size: 32px;
                 margin-top: 10px;
+                @media (max-width: 950px) {
+                    font-size: 26px;
+                }
+                @media (max-width: 780px) {
+                    margin-bottom: 10px;
+                    font-size: 20px;
+                }
+                @media (max-width: 400px) {
+                    font-size: 16px;
+                }
             }
 
             .email{
                 font-weight: 500;
                 font-size: 24px;
                 margin-top: 15px;
+                @media (max-width: 950px) {
+                    font-size: 20px;
+                }
+                @media (max-width: 780px) {
+                    font-size: 18px;
+                }
+                @media (max-width: 400px) {
+                    font-size: 16px;
+                }
             }
         }
     }

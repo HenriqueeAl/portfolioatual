@@ -9,7 +9,7 @@ export const Skills = ()=>{
                 <Skill name='HTML' color='#FFA500' progress='90%'></Skill>
                 <Skill name='CSS' color='#0061E0' progress='95%'></Skill>
                 <Skill name='SASS' color='#E000C6' progress='65%'></Skill>
-                <Skill name='JavaScript' color='#FFFF00' progress='75%'></Skill>
+                <Skill name='JavaScript' color='#fac150' progress='75%'></Skill>
                 <Skill name='TypeScript' color='#0061E0' progress='60%'></Skill>
                 <Skill name='React' color='#00D1E0' progress='75%'></Skill>
                 <Skill name='Node' color='#25AB03' progress='30%'></Skill>

@@ -17,7 +17,7 @@ export const Infos = (props : Infos)=>{
                 <h1>Henrique Almeida de oliveira</h1>
                 <div style={{marginLeft: '15px'}} className={styles.separar}>
                     <p className={styles.role}>Front-end React.Js Developer</p>
-                    <div>
+                    <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
                         <Redes hover={props.darkmode ? 'hoverd' : 'hoverl'}></Redes>
                         <p className={styles.email}>henrique.almeida231@hotmail.com</p>
                     </div>

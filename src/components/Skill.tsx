@@ -11,7 +11,11 @@ export const Skill = (props: Skill)=>{
         <div className={styles.skill}>
             <p>{props.name}</p>
             <div className={styles.fild}>
-                <div className={styles.progress} style={{backgroundColor: props.color, width: props.progress}}></div>
+                <div className={styles.progress} style={{backgroundColor: props.color, width: props.progress}}>
+                    <div className={styles.boxshadow} style={{boxShadow: '0px 0px 25px 8px'+ props.color}}></div>
+                    
+                </div>
+                <span className={styles.boxporcent} style={{background: props.color, marginLeft: props.progress}}>{props.progress}</span>
             </div>
         </div>
     )

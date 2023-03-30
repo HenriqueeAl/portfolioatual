@@ -8,16 +8,46 @@
     justify-content: center;
     transition: all 1s;
     text-decoration: none;
+    background-size: cover;
+    @media (max-width: 950px) {
+        height: 180px;
+    }
+    @media (max-width: 700px) {
+        height: 150px;
+    }
+    @media (max-width: 550px) {
+        height: 130px;
+    }
+    @media (max-width: 450px) {
+        height: 110px;
+    }
     a{
         position: relative;
         top: 35%;
         right: -15%;
+        @media (max-width: 400px) {
+            right: -10%;
+        }
         .githubproject{
             font-size: 40px;
             color: #141f21;
             transition: all 1s;
             opacity: 0;
-            
+            @media (max-width: 950px) {
+                font-size: 35px;
+            }
+            @media (max-width: 700px) {
+                font-size: 26px;
+            }
+            @media (max-width: 630px) {
+                font-size: 22px;
+            }
+            @media (max-width: 550px) {
+                font-size: 18px;
+            }
+            @media (max-width: 450px) {
+                font-size: 14px;
+            }
         }
     }
     .buttonview{
@@ -29,6 +59,22 @@
         background-color: #47A0FF;
         opacity: 0;
         color: white;
+        @media (max-width: 950px) {
+            width: 110px;
+            height: 110px;
+        }
+        @media (max-width: 700px) {
+            width: 85px;
+            height: 85px;
+        }
+        @media (max-width: 550px) {
+            width: 60px;
+            height: 60px;
+        }
+        @media (max-width: 450px) {
+            width: 50px;
+            height: 50px;
+        }
     }
 }
 
@@ -45,6 +91,13 @@
         justify-content: center;
         font-size: 24px;
         font-weight: 1000;
+        @media (max-width: 950px) {
+            font-size: 20px;
+        }
+        @media (max-width: 600px) {
+            font-size: 16px;
+            left: 15px;
+        }
     }
     a{
         box-shadow: inset 0px 0px 52px -6px rgba(216,236,240,1);
@@ -55,7 +108,6 @@
         .githubproject{
             transition: all 1s;
             opacity: 1;
-            
         }
     }
 }

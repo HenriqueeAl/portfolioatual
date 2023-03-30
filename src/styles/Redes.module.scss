@@ -3,10 +3,12 @@
     ul{
         list-style: none;
         display: flex;
+        margin-left: 15px;
         li{
             margin-right: 30px;
             cursor: pointer;
-            opacity: 0.4;display: flex;
+            opacity: 0.8;
+            display: flex;
             align-items: center;
             padding: 5px;
         }
