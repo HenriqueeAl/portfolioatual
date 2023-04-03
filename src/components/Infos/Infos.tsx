@@ -1,5 +1,5 @@
-import styles from '../styles/Infos.module.scss'
-import { Redes } from './Redes'
+import styles from './Infos.module.scss'
+import { Redes } from '../Redes/Redes'
 
 interface Infos {
     darkmode: boolean;

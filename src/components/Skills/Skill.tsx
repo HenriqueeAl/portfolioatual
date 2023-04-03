@@ -1,4 +1,4 @@
-import styles from '../styles/Skill.module.scss'
+import styles from './Skill.module.scss'
 
 interface Skill{
     name: String;

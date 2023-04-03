@@ -1,4 +1,4 @@
-import styles from '../styles/Project.module.scss'
+import styles from './Project.module.scss'
 import { VscGithub } from 'react-icons/vsc';
 
 interface Project{

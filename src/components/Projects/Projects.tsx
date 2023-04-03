@@ -1,4 +1,4 @@
-import styles from '../styles/Projects.module.scss'
+import styles from './Projects.module.scss'
 import { Project } from './Project'
 
 export const Projects = ()=>{

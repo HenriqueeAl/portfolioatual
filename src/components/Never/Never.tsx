@@ -1,4 +1,4 @@
-import styles from '../styles/Never.module.scss'
+import styles from './/Never.module.scss'
 
 export const Never = ()=>{
     return (

@@ -4,6 +4,9 @@
         list-style: none;
         display: flex;
         margin-left: 15px;
+        a{
+            text-decoration: none;
+        }
         li{
             margin-right: 30px;
             cursor: pointer;

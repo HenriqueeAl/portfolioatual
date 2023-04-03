@@ -1,12 +1,12 @@
 import Head from 'next/head'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.scss'
-import { Header } from '@/components/Header'
-import { Infos } from '@/components/Infos'
-import { Skills } from '@/components/Skills'
-import { Projects } from '@/components/Projects'
-import { Never } from '@/components/Never'
-import { Footer } from '@/components/Footer'
+import { Header } from '@/components/Header/Header'
+import { Infos } from '@/components/Infos/Infos'
+import { Skills } from '@/components/Skills/Skills'
+import { Projects } from '@/components/Projects/Projects'
+import { Never } from '@/components/Never/Never'
+import { Footer } from '@/components/Footer/Footer'
 import { useState, useEffect } from 'react';
 import { json } from 'stream/consumers'
 import { Quests } from '@/components/Quests/Quests'
@@ -53,7 +53,7 @@ export default function Home() {
         <title>Portfolio</title>
         <meta name="description" content="Portfolio Front-end React developer." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.png" />
       </Head>
       {darkmode == null ? <></> 
       : 

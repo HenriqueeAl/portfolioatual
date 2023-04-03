@@ -1,6 +1,6 @@
-import styles from '../styles/Footer.module.scss'
+import styles from './Footer.module.scss'
 import { Inter } from 'next/font/google'
-import { Redes } from './Redes'
+import { Redes } from '../Redes/Redes'
 
 interface Footer {
     darkmode: boolean;

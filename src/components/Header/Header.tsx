@@ -1,4 +1,4 @@
-import styles from '../styles/Header.module.scss'
+import styles from './Header.module.scss'
 import { CiDark } from 'react-icons/ci';
 import { MdDarkMode, MdLightMode } from 'react-icons/md';
 

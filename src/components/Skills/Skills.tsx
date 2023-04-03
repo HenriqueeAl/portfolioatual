@@ -1,4 +1,4 @@
-import styles from '../styles/Skills.module.scss'
+import styles from './Skills.module.scss'
 import { Skill } from './Skill'
 
 export const Skills = ()=>{
